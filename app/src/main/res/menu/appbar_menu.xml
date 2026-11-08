@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item android:title="MoreApp"
+            android:id="@+id/moreAppMenu"
+            android:icon="@drawable/baseline_apps_24"
+            app:showAsAction="never"
+            android:iconTint="@color/black"
+
+            />
+        <item
+            android:id="@+id/ratingMenu"
+            android:title="Rating"
+            android:icon="@drawable/baseline_star_24"
+            app:showAsAction="never"
+            android:iconTint="@color/black"
+
+            />
+
+
+
+</menu>

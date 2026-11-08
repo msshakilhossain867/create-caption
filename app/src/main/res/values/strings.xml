@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"> Stylish Name and Bio</string>
+    <string name="drawerLayout_close">Close DrawerLayout</string>
+    <string name="drawerLayout_open">Open DrawerLayout</string>
+</resources>

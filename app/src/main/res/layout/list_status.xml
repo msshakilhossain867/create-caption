@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_413sdp">
+
+
+
+
+
+
+
+    <RelativeLayout
+     android:id="@+id/cardColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/bg_random_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_5">
+            <View android:id="@+id/nextImage"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_shadow_2"
+                />
+
+            <ImageView
+                android:id="@+id/item_Quote"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/round_format_quote_24"
+                android:layout_margin="@dimen/_8sdp"/>
+
+            <ImageView
+                android:id="@+id/favoriteId2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+
+                android:src="@drawable/round_format_quote_24"
+                android:tag="notFavorite" />
+
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_310sdp"
+                android:layout_below="@id/item_Quote"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:shadowColor="#201F1F"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:fontFamily="@font/font_10"
+                android:shadowRadius="10"
+                android:text="sample text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_alignParentBottom="true"
+                android:background="#c1000000"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/item_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="@color/white"
+                android:text="Copy"
+                android:textColor="#202020"
+                android:textAllCaps="false"
+                android:fontFamily="@font/vag"
+                android:drawableRight="@drawable/round_content_copy_24"
+                />
+
+            <Button
+                android:id="@+id/edit_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Download"
+                android:singleLine="true"
+                android:textColor="#202020"
+                android:textAllCaps="false"
+                android:fontFamily="@font/vag"
+                android:drawableRight="@drawable/baseline_download_24"
+                />
+
+            <Button
+                android:id="@+id/shareStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:singleLine="true"
+                android:text="Share"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="#202020"
+                android:textAllCaps="false"
+                android:fontFamily="@font/vag"
+                android:drawableRight="@drawable/baseline_share_24"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

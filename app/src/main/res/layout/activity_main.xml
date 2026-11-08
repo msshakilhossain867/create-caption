@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#FF1C8387"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerLayout">
+
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:menu="@menu/menu_tool"
+            app:navigationIcon="@drawable/baseline_menu_24"
+            android:background="#FF1C8387"
+            app:navigationIconTint="#F5FAF9"
+            app:titleTextColor="@color/white"
+            />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <GridView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDECEC"
+            android:numColumns="2"
+            android:layout_marginTop="?attr/actionBarSize"
+
+            />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="#4ABDF1"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="#4ABDF1"
+        app:menu="@menu/nav_item"
+        app:itemIconSize="30dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>
